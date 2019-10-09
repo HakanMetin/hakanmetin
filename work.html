@@ -1,0 +1,213 @@
+
+	<html>	
+	<head>
+			<title>Work</title>
+
+			<link rel="stylesheet" type="text/css" href="work.css" />
+
+			<body class="landing">
+
+					<!-- Page Wrapper -->
+						<div id="page-wrapper">
+			
+							<!-- Header -->
+								<header id="header" class="alt">
+									<h1><a href="index.html">Hakan Metin</a></h1>
+									<nav id="nav">
+										<ul>
+											<li class="special">
+												<a href="anasayfa.html" class="menuToggle"><span>Hakan Metin</span></a>
+												<div id="menu">
+													<ul>
+														<li><a href="anasayfa.html" class="scrolly">Who Am I</a></li>
+								  <li><a href="anasayfa.html" class="scrolly">Projects</a></li>
+														<li><a href="anasayfa.html" class="scrolly">Contact</a></li>
+													</ul>
+												</div>
+											</li>
+										</ul>
+									</nav>
+								</header>
+			
+							<!-- Banner -->
+								<section id="banner">
+										<div id="particles-js" style="position:relative; height: 100%"></div>
+			
+										<div style="position:absolute; margin-left: auto; margin-right: auto; left: 0; right: 0; pointer-events: none;">
+											<div style="padding-bottom: 15px"><img src="https://i.imgur.com/q8NcJJa.jpg"
+												height="200"
+											  style="border: 5px solid grey; border-radius: 220px;">
+											</div>
+											<div class="inner">
+												<h2>Hakan Metin</h2>
+												<p>Front-end Developer<br />
+											</div>
+										</div>
+										<a href="#one" class="more scrolly">Who Am I?</a>
+			
+								</section>
+			
+							<!-- One -->
+								<section id="one" class="wrapper style1 special">
+									<div class="inner">
+										<header class="major">
+											<h2>About me</h2>
+											<p>Lorem Ipsum, dizgi ve baskı endüstrisinde kullanılan mıgır metinlerdir. Lorem Ipsum, adı bilinmeyen bir matbaacının bir hurufat numune kitabı oluşturmak üzere bir yazı galerisini alarak karıştırdığı 1500'lerden beri endüstri standardı sahte metinler olarak kullanılmıştır.
+											<br/>  <h2>Projelerim</h2></p>
+											<p> https://www.hoovercandyyetkiliservisi.com/</p>
+
+
+
+
+										</header>
+									
+										
+			
+									</div>
+								</section>
+			
+							<!-- Two -->
+								
+									
+										
+			<script>
+						(function($) {
+
+							skel
+								.breakpoints({
+									xlarge:	'(max-width: 1680px)',
+									large:	'(max-width: 1280px)',
+									medium:	'(max-width: 980px)',
+									small:	'(max-width: 736px)',
+									xsmall:	'(max-width: 480px)'
+								});
+						
+							$(function() {
+						
+								var	$window = $(window),
+									$body = $('body'),
+									$wrapper = $('#page-wrapper'),
+									$banner = $('#banner'),
+									$header = $('#header');
+						
+								// Disable animations/transitions until the page has loaded.
+									$body.addClass('is-loading');
+						
+									$window.on('load', function() {
+										window.setTimeout(function() {
+											$body.removeClass('is-loading');
+										}, 100);
+									});
+						
+								// Mobile?
+									if (skel.vars.mobile)
+										$body.addClass('is-mobile');
+									else
+										skel
+											.on('-medium !medium', function() {
+												$body.removeClass('is-mobile');
+											})
+											.on('+medium', function() {
+												$body.addClass('is-mobile');
+											});
+						
+								// Fix: Placeholder polyfill.
+									$('form').placeholder();
+						
+								// Prioritize "important" elements on medium.
+									skel.on('+medium -medium', function() {
+										$.prioritize(
+											'.important\\28 medium\\29',
+											skel.breakpoint('medium').active
+										);
+									});
+						
+								// Scrolly.
+									$('.scrolly')
+										.scrolly({
+											speed: 1500,
+											offset: $header.outerHeight()
+										});
+						
+								// Menu.
+									$('#menu')
+										.append('<a href="#menu" class="close"></a>')
+										.appendTo($body)
+										.panel({
+											delay: 500,
+											hideOnClick: true,
+											hideOnSwipe: true,
+											resetScroll: true,
+											resetForms: true,
+											side: 'right',
+											target: $body,
+											visibleClass: 'is-menu-visible'
+										});
+						
+								// Header.
+									if (skel.vars.IEVersion < 9)
+										$header.removeClass('alt');
+						
+									if ($banner.length > 0
+									&&	$header.hasClass('alt')) {
+						
+										$window.on('resize', function() { $window.trigger('scroll'); });
+						
+										$banner.scrollex({
+											bottom:		$header.outerHeight() + 1,
+											terminate:	function() { $header.removeClass('alt'); },
+											enter:		function() { $header.addClass('alt'); },
+											leave:		function() { $header.removeClass('alt'); }
+										});
+						
+									}
+						
+							});
+						
+			})(jQuery);
+					</script>
+			
+		
+	<div class="wrap">
+	<div class="section-title wow fadeInUp">
+	  <h1>My Skills</h1>
+	  <span class="border"></span>
+	</div>
+	<article class="row">
+	  <ul>
+		<li class="html">
+		  <em>HTML/HTML5</em>
+		  <div>
+			<span class="animated fadeInLeft"></span>
+		  </div>
+		</li>
+		<li class="css">
+		  <em>CSS/CSS3</em>
+		  <div>
+			<span class="animated fadeInLeft"></span>
+		  </div>
+		
+	  </ul>
+	</article>
+	<article class="row">
+	  <ul>
+		<li class="jquery">
+		  <em>JQUERY</em>
+		  <div>
+			<span class="animated fadeInLeft"></span>
+		  </div>
+		</li>
+		<li class="javascript">
+		  <em>JAVASCRIPT</em>
+		  <div>
+			<span class="animated fadeInLeft"></span>
+		  </div>
+		</li>
+		
+	  </ul>
+	</article>
+  </div>
+
+		</body>
+	
+  </html>
