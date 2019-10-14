@@ -151,6 +151,17 @@ a {
 		box-sizing: border-box;
 	}
 
+
+            /*Sosyal Medya*/ 
+ 
+            .sosyal{
+              margin-top: 5%;
+              float:right;
+              margin-left: 0.5px;
+ 
+
+
+            }
 /* Grid */
 
 	.row {
