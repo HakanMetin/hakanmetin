@@ -158,6 +158,7 @@ a {
                   width: 50px;
     			  height: 26%;
     			  position: fixed;
+    			  z-index: 99999;
     			 
 
 
@@ -167,20 +168,20 @@ a {
       .resim1{
 
       margin-bottom: 7px;
-
+    
       }
 
 
       .resim2{
 
       margin-bottom: 7px;
-
+      
       }
  
       .resim3{
 
       margin-bottom: 7px;
-
+       
       }
    
      .resim4{
@@ -1752,6 +1753,7 @@ a {
 
 	header.major {
 		margin: 0 0 3.5em 0;
+
 	}
 
 		header.major h2, header.major h3, header.major h4, header.major h5, header.major h6 {
