@@ -154,16 +154,18 @@ a {
 
             /*Sosyal Medya*/ 
             .sosyal{
-                  margin:20px;
-                  width: 50px;
+            margin:20px;
+            width: 50px;
     			  height: 26%;
     			  position: fixed;
     			  z-index: 99999;
-    			 
-
-
       }
 
+   .sosyal a{
+
+            border:antiquewhite;
+
+   }
 
       .resim1{
 
