@@ -29,7 +29,7 @@ body {
 	display: inline-block;
 }.row ul {
 	width: 90%;
-	margin: 0 20px 0 0 !important;
+	margin: 20px 20px 90px 0 !important;
 	text-align: left !important;
 	padding: 0;
 }.row ul li{
@@ -191,7 +191,12 @@ a {
       margin-bottom: 7px;
 
       }
+   
+       span{
 
+         text-decoration:overline
+
+       }
 
 
 /* Grid */
